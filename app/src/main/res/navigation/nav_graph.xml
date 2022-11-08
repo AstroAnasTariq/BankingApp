@@ -2,4 +2,27 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph" />
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.astroanastariq.bankingapp.ui.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CustomersFragment"
+            app:destination="@id/CustomersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CustomersFragment"
+        android:name="com.astroanastariq.bankingapp.ui.CustomersFragment"
+        android:label="@string/customers_fragment_label"
+        tools:layout="@layout/fragment_customers">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>
