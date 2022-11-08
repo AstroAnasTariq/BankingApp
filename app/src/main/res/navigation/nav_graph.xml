@@ -13,16 +13,69 @@
 
         <action
             android:id="@+id/action_HomeFragment_to_CustomersFragment"
-            app:destination="@id/CustomersFragment" />
+            app:destination="@id/CustomersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/nav_graph" />
+        <action
+            android:id="@+id/action_HomeFragment_to_transactionDetailFragment"
+            app:destination="@id/transactionDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/nav_graph" />
     </fragment>
+
     <fragment
         android:id="@+id/CustomersFragment"
         android:name="com.astroanastariq.bankingapp.ui.CustomersFragment"
         android:label="@string/customers_fragment_label"
         tools:layout="@layout/fragment_customers">
-
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/HomeFragment" />
+            android:id="@+id/action_CustomersFragment_to_customerDetailsFragment"
+            app:destination="@id/customerDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/CustomersFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        android:name="com.astroanastariq.bankingapp.ui.CustomerDetailsFragment"
+        android:label="CustomerDetailsFragment">
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_selectCustomersFragment"
+            app:destination="@id/selectCustomersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/customerDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectCustomersFragment"
+        android:name="com.astroanastariq.bankingapp.ui.SelectCustomersFragment"
+        android:label="fragment_select_customers"
+        tools:layout="@layout/fragment_select_customers" />
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.astroanastariq.bankingapp.ui.TransactionDetailFragment"
+        android:label="fragment_transaction_detail"
+        tools:layout="@layout/fragment_transaction_detail" >
+        <action
+            android:id="@+id/action_transactionDetailFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/HomeFragment" />
+    </fragment>
+
 </navigation>
