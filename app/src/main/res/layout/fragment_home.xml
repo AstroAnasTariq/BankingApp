@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="16dp">
 
         <TextView
@@ -24,7 +25,7 @@
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.23000002" />
+            app:layout_constraintVertical_bias="0.07999998" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/BankingPhoto"
@@ -53,7 +54,7 @@
             android:id="@+id/cutomers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/cairo"
             android:text="@string/show_cutomers"
             android:textColor="#fff"
@@ -64,5 +65,20 @@
             app:layout_constraintStart_toStartOf="@+id/BankingPhoto"
             app:layout_constraintTop_toBottomOf="@+id/BankingPhoto" />
 
+        <Button
+            android:id="@+id/transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/cairo"
+            android:text="@string/transactions"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cutomers"
+            app:layout_constraintStart_toStartOf="@+id/cutomers"
+            app:layout_constraintTop_toBottomOf="@+id/cutomers" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+</ScrollView>

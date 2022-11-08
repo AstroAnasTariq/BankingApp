@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    <data>-->
+
+    <!--        <variable-->
+    <!--            name="transactionRecord"-->
+    <!--            type="com.astroanastariq.bankingapp.database.TransactionRecord" />-->
+
+    <!--        <variable-->
+    <!--            name="clicklistener"-->
+    <!--            type="com.astroanastariq.bankingapp.ui.fragment.transactionRecord.TransactionRecordClickListener" />-->
+    <!--    </data>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/transaction_record_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="@{()->clicklistener.onClick(transactionRecord)}"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@{transactionRecord.status ?  @color/green : @color/red }">
+
+            <LinearLayout
+                android:id="@+id/from_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:padding="8dp"
+                    android:text="@string/from"
+                    android:textColor="@color/md_theme_light_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sender_customer_name_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:text="@{transactionRecord.senderCustomerName}"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:text="Anas Tariq" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/to_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/from_linear_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:padding="8dp"
+                    android:text="@string/to"
+                    android:textColor="@color/md_theme_light_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/to_customer_name_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:text="@{transactionRecord.receiverCustomerName}"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:text="Ismail Muhammad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_amount_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/to_linear_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:padding="8dp"
+                    android:text="@string/amount"
+                    android:textColor="@color/md_theme_light_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/transfer_amount_record_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:text="@{Integer.toString(transactionRecord.transferredAmount)}"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:text="6,874" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_status_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/transfer_amount_linear_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:padding="8dp"
+                    android:text="@string/status"
+                    android:textColor="@color/md_theme_light_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/transfer_status_record_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:text="@{transactionRecord.status ? @string/success : @string/failure}"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:text="999" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
