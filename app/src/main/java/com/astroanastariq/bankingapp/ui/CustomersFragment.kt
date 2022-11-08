@@ -33,8 +33,8 @@ class CustomersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.buttonSecond.setOnClickListener {
-//            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+//        binding.customer_view_card.setOnClickListener {
+//            findNavController().navigate(R.id.action_CustomersFragment_to_customerDetailsFragment)
 //        }
     }
 
