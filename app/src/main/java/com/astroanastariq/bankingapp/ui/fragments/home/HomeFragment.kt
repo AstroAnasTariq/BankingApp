@@ -20,6 +20,11 @@ class HomeFragment : Fragment() {
     ): View {
 
         binding = FragmentHomeBinding.inflate(inflater)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.cutomers.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_customerFragment)
@@ -28,7 +33,5 @@ class HomeFragment : Fragment() {
         binding.transactions.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_transactionRecordFragment)
         }
-
-        return binding.root
     }
 }
