@@ -3,25 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/HomeFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/HomeFragment"
-        android:name="com.astroanastariq.bankingapp.ui.HomeFragment"
-        android:label="@string/home_fragment_label"
+        android:id="@+id/homeFragment"
+        android:name="com.astroanastariq.bankingapp.ui.fragments.home.HomeFragment"
+        android:label="Home"
         tools:layout="@layout/fragment_home">
-
         <action
-            android:id="@+id/action_HomeFragment_to_CustomersFragment"
-            app:destination="@id/CustomersFragment"
+            android:id="@+id/action_homeFragment_to_customerFragment"
+            app:destination="@id/customerFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@id/nav_graph" />
         <action
-            android:id="@+id/action_HomeFragment_to_transactionDetailFragment"
-            app:destination="@id/transactionDetailFragment"
+            android:id="@+id/action_homeFragment_to_transactionRecordFragment"
+            app:destination="@id/transactionRecordFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
@@ -30,52 +29,88 @@
     </fragment>
 
     <fragment
-        android:id="@+id/CustomersFragment"
-        android:name="com.astroanastariq.bankingapp.ui.CustomersFragment"
-        android:label="@string/customers_fragment_label"
-        tools:layout="@layout/fragment_customers">
+        android:id="@+id/customerFragment"
+        android:name="com.astroanastariq.bankingapp.ui.fragments.customer.CustomerFragment"
+        android:label="Customer List"
+        tools:layout="@layout/fragment_customer">
         <action
-            android:id="@+id/action_CustomersFragment_to_customerDetailsFragment"
-            app:destination="@id/customerDetailsFragment"
+            android:id="@+id/action_customerFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/CustomersFragment" />
+            app:popUpTo="@id/homeFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/customerDetailsFragment"
-        android:name="com.astroanastariq.bankingapp.ui.CustomerDetailsFragment"
-        android:label="CustomerDetailsFragment">
+        android:id="@+id/detailsFragment"
+        android:name="com.astroanastariq.bankingapp.ui.fragments.details.DetailsFragment"
+        android:label="Customer Detail"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="customer"
+            app:argType="com.astroanastariq.bankingapp.database.Customer" />
         <action
-            android:id="@+id/action_customerDetailsFragment_to_selectCustomersFragment"
-            app:destination="@id/selectCustomersFragment"
+            android:id="@+id/action_detailsFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/customerDetailsFragment" />
+            app:popUpTo="@id/customerFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/selectCustomersFragment"
-        android:name="com.astroanastariq.bankingapp.ui.SelectCustomersFragment"
-        android:label="fragment_select_customers"
-        tools:layout="@layout/fragment_select_customers" />
-    <fragment
-        android:id="@+id/transactionDetailFragment"
-        android:name="com.astroanastariq.bankingapp.ui.TransactionDetailFragment"
-        android:label="fragment_transaction_detail"
-        tools:layout="@layout/fragment_transaction_detail" >
+        android:id="@+id/transactionFragment"
+        android:name="com.astroanastariq.bankingapp.ui.fragments.transaction.TransactionFragment"
+        android:label="Transaction Status"
+        tools:layout="@layout/fragment_transaction">
+        <argument
+            android:name="transferAmount"
+            app:argType="integer" />
+        <argument
+            android:name="customer"
+            app:argType="com.astroanastariq.bankingapp.database.Customer" />
         <action
-            android:id="@+id/action_transactionDetailFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment"
+            android:id="@+id/action_transactionFragment_to_successfulTransactionFragment"
+            app:destination="@id/successfulTransactionFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/HomeFragment" />
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_transactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/successfulTransactionFragment"
+        android:name="com.astroanastariq.bankingapp.ui.fragments.successfulTransaction.SuccessfulTransactionFragment"
+        android:label="Transaction Successful"
+        tools:layout="@layout/fragment_successful_transaction">
+        <argument
+            android:name="senderCustomer"
+            app:argType="com.astroanastariq.bankingapp.database.Customer" />
+        <argument
+            android:name="receiverCustomer"
+            app:argType="com.astroanastariq.bankingapp.database.Customer" />
+        <argument
+            android:name="transferAmount"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_successfulTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionRecordFragment"
+        android:name="com.astroanastariq.bankingapp.ui.fragments.transactionRecord.TransactionRecordFragment"
+        android:label="Transaction Record"
+        tools:layout="@layout/fragment_transaction_record" />
 </navigation>

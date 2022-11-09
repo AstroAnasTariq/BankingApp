@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--    <data>-->
-    <!--        <variable-->
-    <!--            name="customer"-->
-    <!--            type="com.astroanastariq.bankingapp.database.Customer" />-->
-    <!--        <variable-->
-    <!--            name="clicklistener"-->
-    <!--            type="com.astroanastariq.bankingapp.ui.fragment.customer.CustomerItemClickListener" />-->
-    <!--    </data>-->
+    <data>
+        <variable
+            name="customer"
+            type="com.astroanastariq.bankingapp.database.Customer" />
+        <variable
+            name="clicklistener"
+            type="com.astroanastariq.bankingapp.ui.fragments.customer.CustomerItemClickListener" />
+    </data>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/customer_view_card"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@color/md_theme_dark_onPrimaryContainer"
-        android:onClick="@{}"
+        android:onClick="@{()->clicklistener.onClick(customer)}"
         android:padding="2dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="10dp">
@@ -33,7 +33,6 @@
                 android:id="@+id/customer_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 tools:ignore="UseCompoundDrawables">
 
@@ -43,17 +42,17 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginEnd="5dp"
-                    android:contentDescription="@string/phone_number"
+                    android:contentDescription="@string/customers_name"
                     android:src="@drawable/ic_round_person_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
                     android:fontFamily="@font/cairo"
-                    android:onClick="@{}"
+                    android:text="@{customer.customerName}"
                     android:textColor="@color/md_theme_light_primary"
-                    android:textSize="20sp"
+                    android:textSize="19sp"
                     android:textStyle="bold"
                     tools:ignore="RelativeOverlap"
                     tools:text="@string/customers_name" />
@@ -82,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/account_numbertxtlinear"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="5dp"
                 tools:ignore="RelativeOverlap">
 
                 <TextView
@@ -90,9 +89,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo"
-                    android:text="@{}"
+                    android:text="@{customer.customerAccountNumber}"
                     android:textColor="@color/md_theme_light_primary"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:textStyle="bold"
                     tools:text="@string/_9999_444_9999" />
             </LinearLayout>

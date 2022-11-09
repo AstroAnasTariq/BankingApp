@@ -22,11 +22,11 @@
     <string name="transaction_status">Transaction Status</string>
     <string name="katie_cabrera">Katie Cabrera</string>
     <string name="email">katiecabrera77@example.com</string>
-    <string name="card_number">•••• •••• 6969</string>
+    <string name="card_number">•••• •••• 6969999</string>
     <string name="balance_available">45,568.00</string>
     <string name="balancetxt">Balance:</string>
     <string name="mobile_number_9999_444_9999">Mobile Number: +9999 444 9999</string>
-    <string name="swift_bic_code">SWIFT/BIC Code: AAAA BB CC DDD</string>
+    <string name="swift_bic_code">1354459875224</string>
     <string name="transfer_money">Transfer Money</string>
     <string name="enter_amount_of_transfer">Enter amount of transfer</string>
     <string name="transactions">Transactions</string>
@@ -39,6 +39,8 @@
     <string name="transferred_amount">Transferred Amount:</string>
     <string name="from">From:</string>
     <string name="to">To:</string>
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
     <string name="amount">Amount:</string>
     <string name="status">Status:</string>
     <string name="_9999_444_9999"> 9999 444 9999</string>

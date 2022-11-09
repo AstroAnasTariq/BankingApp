@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.astroanastariq.BankingApp.MainActivity">
     <item
-        android:id="@+id/action_transactions"
+        android:id="@+id/delete_all"
         android:title="@string/action_transactions"
         android:icon="@drawable/ic_round_delete_24"
         app:showAsAction="always" />

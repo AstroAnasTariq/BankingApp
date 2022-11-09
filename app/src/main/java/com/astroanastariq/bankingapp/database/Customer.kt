@@ -16,6 +16,6 @@ data class Customer constructor(
     val customerEmail: String,
     val customerMobileNumber: String,
     val customerAccountNumber: String,
-    val ifscCode: String,
+    val swiftCode: String,
     val accountBalance: Int
 ) : Parcelable

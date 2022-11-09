@@ -5,18 +5,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer1
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer10
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer11
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer2
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer3
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer4
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer5
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer6
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer7
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer8
-import com.itsamankrsingh.bankingapp.utils.CustomerDetails.Companion.customer9
-import com.itsamankrsingh.bankingapp.utils.ioThread
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer1
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer10
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer11
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer2
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer3
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer4
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer5
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer6
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer7
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer8
+import com.astroanastariq.bankingapp.utils.CustomerDetails.Companion.customer9
+import com.astroanastariq.bankingapp.utils.ioThread
 
 @Database(entities = [Customer::class,TransactionRecord::class],version = 1,exportSchema = false)
 abstract class CustomerDatabase:RoomDatabase() {
