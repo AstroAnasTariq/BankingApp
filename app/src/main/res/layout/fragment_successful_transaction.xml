@@ -319,6 +319,7 @@
                         android:layout_margin="10dp"
                         app:cardBackgroundColor="@color/md_theme_dark_onSecondaryContainer"
                         app:cardCornerRadius="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/receiver_info">
@@ -356,23 +357,6 @@
                                 tools:text="7,920" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
-
-                    <Button
-                        android:id="@+id/transfer_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:fontFamily="@font/cairo"
-                        android:text="@string/go_to_home"
-                        android:textColor="#fff"
-                        android:layout_marginBottom="16dp"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/trans_cardView" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.astroanastariq.bankingapp.R
 import com.astroanastariq.bankingapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +29,11 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
     }
+
+    override fun onSupportNavigateUp() =
+        findNavController(R.id.nav_host_fragment_content_main)
+            .navigateUp()
+
 
 //    override fun onSupportNavigateUp(): Boolean {
 //        return binding.navHostFragmentContentMain

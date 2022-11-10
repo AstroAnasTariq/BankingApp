@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -26,8 +27,9 @@ class DetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-        binding = FragmentDetailsBinding.inflate(inflater)
+
+        binding = FragmentDetailsBinding.inflate(inflater, container, false)
+
         binding.detailsCustomerNameTextView.text = args.customer.customerName
         binding.detailsAccountNumberTextView.text = args.customer.customerAccountNumber
         binding.detailsMobileNumberTextView.text = args.customer.customerMobileNumber
@@ -38,6 +40,8 @@ class DetailsFragment : Fragment() {
         binding.transferButton.setOnClickListener {
             openTransferAmountDialogBox()
         }
+
+//        onSupportNavigateUp()
 
         return binding.root
     }
@@ -72,4 +76,11 @@ class DetailsFragment : Fragment() {
         builder.show()
     }
 
+//    private fun onSupportNavigateUp() {
+//        requireActivity()
+//            .onBackPressedDispatcher.addCallback(viewLifecycleOwner)
+//            {
+//                handleOnBackPressed()
+//            }
+//    }
 }
