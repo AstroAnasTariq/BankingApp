@@ -75,12 +75,4 @@ class DetailsFragment : Fragment() {
         builder.create()
         builder.show()
     }
-
-//    private fun onSupportNavigateUp() {
-//        requireActivity()
-//            .onBackPressedDispatcher.addCallback(viewLifecycleOwner)
-//            {
-//                handleOnBackPressed()
-//            }
-//    }
 }

@@ -29,6 +29,5 @@ class TransactionViewModel(private var databaseSource: CustomerDao) : ViewModel(
                 requiredIdList.add(id)
             }
         }
-
     }
 }

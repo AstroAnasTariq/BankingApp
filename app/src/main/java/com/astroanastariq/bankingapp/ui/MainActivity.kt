@@ -1,7 +1,6 @@
 package com.astroanastariq.bankingapp.ui
 
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -11,16 +10,13 @@ import com.astroanastariq.bankingapp.R
 import com.astroanastariq.bankingapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
 
-//        binding.navHostFragmentContentMain
-//            .getFragment<NavHostFragment>().navController
         setSupportActionBar(binding.topAppBar)
-        //I've used .getFragment instead of findNavController
+        //I've used .getFragment instead of findNavController to prevent an error
         val navController = binding.navHostFragmentContentMain
             .getFragment<NavHostFragment>().navController
 
@@ -33,11 +29,4 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp() =
         findNavController(R.id.nav_host_fragment_content_main)
             .navigateUp()
-
-
-//    override fun onSupportNavigateUp(): Boolean {
-//        return binding.navHostFragmentContentMain
-//            .getFragment<NavHostFragment>().navController
-//            .navigateUp() || super.onSupportNavigateUp()
-//    }
 }

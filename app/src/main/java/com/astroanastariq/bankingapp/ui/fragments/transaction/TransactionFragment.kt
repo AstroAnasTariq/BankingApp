@@ -52,7 +52,6 @@ class TransactionFragment : Fragment() {
         viewModel.updatedCustomerList.observe(viewLifecycleOwner) { customerList ->
             adapter.submitList(customerList)
         }
-
         return binding.root
     }
 }
