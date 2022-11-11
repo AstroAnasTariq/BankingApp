@@ -2,12 +2,10 @@ package com.astroanastariq.bankingapp.ui.fragments.transactionRecord
 
 import android.content.Context
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.astroanastariq.bankingapp.R
 import com.astroanastariq.bankingapp.database.TransactionRecord
 import com.astroanastariq.bankingapp.database.TransactionRecordDao
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -53,7 +51,6 @@ class TransactionRecordViewModel(private val transactionRecordDatasource: Transa
                 deleteTransactionRecord(transactionRecord)
                 Toast.makeText(context, "Transaction deleted successfully.", Toast.LENGTH_SHORT)
                     .show()
-
             }
 
             setNegativeButton("No") { _, _ ->
@@ -66,7 +63,7 @@ class TransactionRecordViewModel(private val transactionRecordDatasource: Transa
     }
 
     fun deleteAllTransaction(context: Context) {
-        val builder = AlertDialog.Builder(context).apply {
+        val builder = MaterialAlertDialogBuilder(context).apply {
             setPositiveButton("Yes") { _, _ ->
                 deleteAllTransaction()
                 Toast.makeText(context, "All Transaction deleted successfully.", Toast.LENGTH_SHORT)

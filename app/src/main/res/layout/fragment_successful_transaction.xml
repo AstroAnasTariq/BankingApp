@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="customerViewmodel"
             type="com.astroanastariq.bankingapp.ui.fragments.successfulTransaction.SuccessfulTransactionViewModel" />

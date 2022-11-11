@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.astroanastariq.bankingapp.R
 import com.astroanastariq.bankingapp.databinding.FragmentDetailsBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class DetailsFragment : Fragment() {
@@ -40,15 +41,12 @@ class DetailsFragment : Fragment() {
         binding.transferButton.setOnClickListener {
             openTransferAmountDialogBox()
         }
-
-//        onSupportNavigateUp()
-
         return binding.root
     }
 
     private fun openTransferAmountDialogBox() {
 
-        val builder = AlertDialog.Builder(requireContext())
+        val builder = MaterialAlertDialogBuilder(requireContext())
         val inflater = requireActivity().layoutInflater
         val dialogLayout = inflater.inflate(R.layout.transfer_amount, null)
 
@@ -68,7 +66,6 @@ class DetailsFragment : Fragment() {
                         )
                     findNavController().navigate(action)
                 }
-
             }
             setNegativeButton("Cancel") { _, _ -> }
         }

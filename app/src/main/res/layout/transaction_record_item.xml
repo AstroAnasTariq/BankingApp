@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="transactionRecord"
             type="com.astroanastariq.bankingapp.database.TransactionRecord" />
+
         <variable
             name="clicklistener"
             type="com.astroanastariq.bankingapp.ui.fragments.transactionRecord.TransactionRecordClickListener" />
@@ -48,6 +50,7 @@
                     android:fontFamily="@font/cairo"
                     android:padding="8dp"
                     android:text="@string/from"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -58,6 +61,7 @@
                     android:layout_weight="3"
                     android:padding="8dp"
                     android:text="@{transactionRecord.senderCustomerName}"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="italic"
                     tools:text="Anas Tariq" />
@@ -81,6 +85,7 @@
                     android:fontFamily="@font/cairo"
                     android:padding="8dp"
                     android:text="@string/to"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -91,6 +96,7 @@
                     android:layout_weight="3"
                     android:padding="8dp"
                     android:text="@{transactionRecord.receiverCustomerName}"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="italic"
                     tools:text="Ismail Muhammad" />
@@ -114,6 +120,7 @@
                     android:fontFamily="@font/cairo"
                     android:padding="8dp"
                     android:text="@string/amount"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -124,6 +131,7 @@
                     android:layout_weight="3"
                     android:padding="8dp"
                     android:text="@{Integer.toString(transactionRecord.transferredAmount)}"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="italic"
                     tools:text="6,874" />
@@ -148,6 +156,7 @@
                     android:fontFamily="@font/cairo"
                     android:padding="8dp"
                     android:text="@string/status"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -158,6 +167,7 @@
                     android:layout_weight="3"
                     android:padding="8dp"
                     android:text="@{transactionRecord.status ? @string/success : @string/failure}"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="italic"
                     tools:text="999" />

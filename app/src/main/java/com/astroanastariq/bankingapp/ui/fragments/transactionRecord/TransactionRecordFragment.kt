@@ -43,7 +43,6 @@ class TransactionRecordFragment : Fragment() {
         }
 
         binding.viewModel = viewModel
-//        setHasOptionsMenu(true)
         return binding.root
     }
 
