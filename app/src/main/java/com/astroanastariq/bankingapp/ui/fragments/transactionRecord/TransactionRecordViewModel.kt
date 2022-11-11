@@ -7,8 +7,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.astroanastariq.bankingapp.R
 import com.astroanastariq.bankingapp.database.TransactionRecord
 import com.astroanastariq.bankingapp.database.TransactionRecordDao
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
 
 class TransactionRecordViewModel(private val transactionRecordDatasource: TransactionRecordDao) :
@@ -46,7 +48,7 @@ class TransactionRecordViewModel(private val transactionRecordDatasource: Transa
         context: Context,
         transactionRecord: TransactionRecord
     ) {
-        val builder = AlertDialog.Builder(context).apply {
+        val builder = MaterialAlertDialogBuilder(context).apply {
             setPositiveButton("Yes") { _, _ ->
                 deleteTransactionRecord(transactionRecord)
                 Toast.makeText(context, "Transaction deleted successfully.", Toast.LENGTH_SHORT)

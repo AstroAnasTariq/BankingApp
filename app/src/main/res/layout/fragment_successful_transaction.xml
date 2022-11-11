@@ -70,7 +70,6 @@
                             android:fontFamily="@font/cairo"
                             android:padding="4dp"
                             android:text="@string/sender_info"
-                            android:textColor="@color/md_theme_light_primary"
                             android:textSize="25sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +93,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/name"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -128,7 +126,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/account_number"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -163,7 +160,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/balancetxt"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -198,7 +194,6 @@
                             android:fontFamily="@font/cairo"
                             android:padding="4dp"
                             android:text="@string/receiver_info"
-                            android:textColor="@color/md_theme_light_primary"
                             android:textSize="25sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -224,7 +219,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/name"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -259,7 +253,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/account_number"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -294,7 +287,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/balancetxt"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -317,7 +309,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_margin="10dp"
-                        app:cardBackgroundColor="@color/md_theme_dark_onSecondaryContainer"
+                        app:cardBackgroundColor="?attr/colorSurface"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -342,7 +334,6 @@
                                 android:fontFamily="@font/cairo"
                                 android:padding="8dp"
                                 android:text="@string/transferred_amount"
-                                android:textColor="@color/md_theme_light_primary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 

@@ -51,7 +51,6 @@
                     android:layout_gravity="center_vertical"
                     android:fontFamily="@font/cairo"
                     android:text="@{customer.customerName}"
-                    android:textColor="@color/md_theme_light_primary"
                     android:textSize="19sp"
                     android:textStyle="bold"
                     tools:ignore="RelativeOverlap"
@@ -90,8 +89,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo"
                     android:text="@{customer.customerAccountNumber}"
-                    android:textColor="@color/md_theme_light_primary"
                     android:textSize="17sp"
+                    style="?android:attr/textColorPrimary"
                     android:textStyle="bold"
                     tools:text="@string/_9999_444_9999" />
             </LinearLayout>
