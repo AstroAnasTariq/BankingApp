@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.astroanastariq.BankingApp.MainActivity">
+    <item
+        android:id="@+id/dark_mode"
+        android:title="@string/dark_mode"
+        android:icon="@drawable/ic_round_dark_mode_24"
+        app:showAsAction="always" />
+</menu>

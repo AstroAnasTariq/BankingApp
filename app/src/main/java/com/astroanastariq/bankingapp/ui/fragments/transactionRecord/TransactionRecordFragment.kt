@@ -2,8 +2,10 @@ package com.astroanastariq.bankingapp.ui.fragments.transactionRecord
 
 import android.os.Bundle
 import android.view.*
+import androidx.core.view.MenuHost
+import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import com.astroanastariq.bankingapp.R
 import com.astroanastariq.bankingapp.database.CustomerDatabase
@@ -35,27 +37,36 @@ class TransactionRecordFragment : Fragment() {
         binding.transactionRecordRecyclerView.adapter = adapter
 
         viewModel.transactionRecordList.observe(
-            viewLifecycleOwner,
-            Observer { transactionRecordList ->
-                adapter.submitList(transactionRecordList)
-            })
+            viewLifecycleOwner
+        ) { transactionRecordList ->
+            adapter.submitList(transactionRecordList)
+        }
 
         binding.viewModel = viewModel
-        setHasOptionsMenu(true)
+//        setHasOptionsMenu(true)
         return binding.root
     }
 
-    @Deprecated("Deprecated in Java")
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.menu_main, menu)
-    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-    @Deprecated("Deprecated in Java")
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.delete_all) {
-            viewModel.deleteAllTransaction(requireContext())
-        }
-        return false
+        val menuHost: MenuHost = requireActivity()
+
+        menuHost.addMenuProvider(object : MenuProvider {
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                // Add menu items here
+                menuInflater.inflate(R.menu.delete_menu, menu)
+            }
+
+            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                // Handle the menu selection
+                return when (menuItem.itemId) {
+                    R.id.delete_all -> {
+                        viewModel.deleteAllTransaction(requireContext())
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 }
