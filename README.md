@@ -10,8 +10,27 @@ A project built for GRIP intern program at **The Sparks Foundations**
 * **LiveData**
 * **SQLite, Room** Database - Accessing data using Room DAOs.
 * **Shared Preferences** Store and retrieve Night-mode status.
+* **Lifecycle-aware components**
+* **LiveData**
+* **DataBinding, ViewBinding**
 * **Material 3** design system, Easy switching between Light & Night mode with an appBar-menu Button.
 * **RecyclerView**
 
-## Screenshots ##
+## App Architecture ##
+[The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png)
+[The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
 
+## Youtube Link ##
+
+
+## GIF ##
+
+
+## App Screenshots ##
+###### Light Mode
+|                                        Screen 1                                        |                                        Screen 2                                        |
+|:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
+| ![Load1](https://github.com/AstroAnasTariq/LoadApp/blob/main/screenshots/Screen_1.png) | ![Load2](https://github.com/AstroAnasTariq/LoadApp/blob/main/screenshots/Screen_2.png) |
+
+
+###### Night Mode
