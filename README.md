@@ -17,8 +17,8 @@ A project built for GRIP intern program at **The Sparks Foundations**
 * **RecyclerView**
 
 ## App Architecture ##
-![The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png)
-![The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
+|:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
+| [The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png) | ![The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
 
 ## Youtube Link ##
 
@@ -28,8 +28,21 @@ A project built for GRIP intern program at **The Sparks Foundations**
 
 ## App Screenshots ##
 ### **Home**
-|                                       Light Mode                                       |                                       Night Mode                                       |
-|:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
-| ![Load1](https://github.com/AstroAnasTariq/LoadApp/blob/main/screenshots/Screen_1.png) | ![Load2](https://github.com/AstroAnasTariq/LoadApp/blob/main/screenshots/Screen_2.png) |
+|                                                Light Mode                                                |                                               Night Mode                                                |
+|:--------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
+|          ![Home_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/0_Home_Light.png)          |          ![Home_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/0_Home_Dark.png)          |
 
+### **Customer List**
+|                                                Light Mode                                                |                                               Night Mode                                                |
+|:--------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
+| ![Customer_List_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/1_Customer_List_Light.png) | ![Customer_List_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/1_Customer_List_Dark.png) |
 
+### **Customer Detail**
+|                                                  Light Mode                                                  |                                                 Night Mode                                                  |
+|:------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|
+| ![Customer_Detail_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/2_Customer_Detail_Light.png) | ![Customer_Detail_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/2_Customer_Detail_Dark.png) |
+
+### **Dialog Light**
+|                                         Light Mode                                         |                                        Night Mode                                         |
+|:------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
+| ![Dialog_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/3_Dialog_Light.png) | ![Dialog_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/3_Dialog_Dark.png) |
