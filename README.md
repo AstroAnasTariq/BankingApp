@@ -17,8 +17,9 @@ A project built for GRIP intern program at **The Sparks Foundations**
 * **RecyclerView**
 
 ## App Architecture ##
-|:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
-| ![The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png) | ![The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
+![The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png=400x200) 
+----------------------------------------------------------
+![The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png=400x200)
 
 ## Youtube Link ##
 
