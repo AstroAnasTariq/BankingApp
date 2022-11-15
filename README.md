@@ -17,11 +17,11 @@ A project built for GRIP intern program at **The Sparks Foundations**
 * **RecyclerView**
 
 ## App Architecture ##
-<p align="center">
+<p>
   <img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png">
 </p>
 ----------------------------------------------
-<p align="center">
+<p>
   <img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data">
 </p>
 
