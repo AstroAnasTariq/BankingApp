@@ -29,7 +29,7 @@ https://youtu.be/tBcN2gvNydc
 
 ![arch overview ui](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png)
 
-![arch overview data](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data)
+![arch overview data](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
 
 ## App Screenshots ##
 
