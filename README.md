@@ -15,7 +15,6 @@ program at **The Sparks Foundations**
 * **SQLite, Room** Database - Accessing data using Room DAOs.
 * **Shared Preferences** Store and retrieve Night-mode status.
 * **Lifecycle-aware components**
-* **LiveData**
 * **DataBinding, ViewBinding**
 * **Material 3** design system, Easy switching between Light & Night mode with an appBar-menu
   Button.
