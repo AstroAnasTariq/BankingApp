@@ -21,8 +21,9 @@ program at **The Sparks Foundations**
 * **RecyclerView**
 
 ## Youtube Link ##
-
 https://youtu.be/tBcN2gvNydc
+<img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/Thumbnail.png" alt="Thumbnail" width="200">
+
 
 ## App Architecture ##
 
