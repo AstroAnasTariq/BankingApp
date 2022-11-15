@@ -1,6 +1,6 @@
 # Basic Banking App #
-Users can transfer money to one another, and each transaction updates the balance in each party's bank account, and you can show all Transactions history Record.
-A project built for GRIP intern program at **The Sparks Foundations**
+Users can transfer money to one another, and each transaction updates the balance in each party's bank account, you can show all Transaction History Records.
+A project built for the GRIP intern program at **The Sparks Foundations**
 
 ## Built With ##
 * **Android Studio** - Default IDE used to build android apps.
@@ -16,17 +16,12 @@ A project built for GRIP intern program at **The Sparks Foundations**
 * **Material 3** design system, Easy switching between Light & Night mode with an appBar-menu Button.
 * **RecyclerView**
 
-## App Architecture ##
-<p>
-  <img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png">
-</p>
-----------------------------------------------
-<p>
-  <img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data">
-</p>
-
 ## Youtube Link ##
+https://youtu.be/tBcN2gvNydc 
 
+## App Architecture ##
+![arch overview ui](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png)
+![arch overview data](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data)
 
 ## App Screenshots ##
 ### **Home**
