@@ -1,5 +1,5 @@
 # Basic Banking App #
-<img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/Thumbnail.png" alt="Thumbnail" width="700">
+<img src="https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/Thumbnail.png" alt="Thumbnail">
 
 Users can transfer money to one another, and each transaction updates the balance in each party's
 bank account, you can show all Transaction History Records. A project built for the GRIP intern
