@@ -18,7 +18,7 @@ A project built for GRIP intern program at **The Sparks Foundations**
 
 ## App Architecture ##
 |:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
-| [The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png) | ![The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
+| ![The UI layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-ui.png) | ![The data layer's role in app architecture](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/mad-arch-overview-data.png)
 
 ## Youtube Link ##
 
@@ -42,7 +42,22 @@ A project built for GRIP intern program at **The Sparks Foundations**
 |:------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|
 | ![Customer_Detail_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/2_Customer_Detail_Light.png) | ![Customer_Detail_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/2_Customer_Detail_Dark.png) |
 
-### **Dialog Light**
+### **Dialog**
 |                                         Light Mode                                         |                                        Night Mode                                         |
 |:------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
 | ![Dialog_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/3_Dialog_Light.png) | ![Dialog_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/3_Dialog_Dark.png) |
+
+### **Transaction Status**
+|                                                     Light Mode                                                     |                                                    Night Mode                                                     |
+|:------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
+| ![Transaction_Status_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/4_Transaction_Status_Light.png) | ![Transaction_Status_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/4_Transaction_Status_Dark.png) |
+
+### **Transaction Record**
+|                                                     Light Mode                                                     |                                                    Night Mode                                                     |
+|:------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
+| ![Transaction_Record_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/6_Transaction_Record_Light.png) | ![Transaction_Record_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/6_Transaction_Record_Dark.png) |
+
+### **Transaction Deleted**
+|                                                      Light Mode                                                      |                                                     Night Mode                                                      |
+|:--------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|
+| ![Transaction_Deleted_L](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/7_Transaction_Deleted_Light.png) | ![Transaction_Deleted_D](https://github.com/AstroAnasTariq/BankingApp/blob/main/Res/7_Transaction_Deleted_Dark.png) |
